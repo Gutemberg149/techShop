@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "qtd": 0,
+    "name": "Wireless Mouse",
+    "description": "A smooth and responsive wireless mouse with ergonomic design.",
+    "full_description": "This smooth and responsive wireless mouse is designed to provide a seamless navigation experience. Its ergonomic design ensures comfort during extended use, making it perfect for both casual browsing and intense work sessions. The mouse offers reliable performance with a long battery life, making it a great addition to any workstation.",
+    "price": 229.99,
+    "images": "https://images.tcdn.com.br/img/img_prod/1056253/mouse_sem_fio_preto_wireless_2_4g_empresarial_hs_762_929_1_e631f7be6804f6d6deeee22dfc92509f.jpg"
+  },
+  {
+    "id": 2,
+    "qtd": 0,
+    "name": "Bluetooth Headphones",
+    "description": "High-quality over-ear bluetooth headphones with noise cancellation.",
+    "full_description": "Experience high-quality sound with these over-ear Bluetooth headphones. Featuring noise cancellation technology, they provide an immersive listening experience free from distractions. The comfortable ear cushions and adjustable headband ensure a perfect fit, making them ideal for long listening sessions whether you're at home, on the go, or at work.",
+    "price": 389.99,
+    "images": "https://www.fastshop.com.br//wcsstore/FastShopCAS/images/catalog/AEMUW43BEAAZL_PRD/AEMUW43BEAAZL_PRD_447_1.jpeg"
+  },
+  {
+    "id": 3,
+    "qtd": 0,
+    "name": "Smartphone Stand",
+    "description": "Adjustable smartphone stand for hands-free viewing and video calls.",
+    "full_description": "This versatile and adjustable smartphone stand is perfect for hands-free viewing and video calls. Its sturdy design provides stability, while its adjustability ensures the perfect angle for your viewing pleasure. The stand is compatible with a wide range of smartphones and can easily be adjusted to different heights and angles, making it a must-have accessory for any desk.",
+    "price": 94.99,
+    "images": "https://m.media-amazon.com/images/I/41ASwlyDv4L.__AC_SX300_SY300_QL70_ML2_.jpg"
+  },
+  {
+    "id": 4,
+    "qtd": 0,
+    "name": "Portable Charger",
+    "description": "Compact and powerful portable charger with fast charging capabilities.",
+    "full_description": "Keep your devices charged on the go with this compact and powerful portable charger. Featuring fast charging capabilities, it ensures your smartphone, tablet, and other gadgets are always ready for use. The charger is lightweight and easy to carry, making it perfect for travel, commutes, or just keeping in your bag for emergencies.",
+    "price": 99.99,
+    "images": "https://www.fastshop.com.br//wcsstore/FastShopCAS/images/catalog/I4PB10MAGSAZL_PRD/I4PB10MAGSAZL_PRD_447_1.jpeg"
+  },
+  {
+    "id": 5,
+    "qtd": 0,
+    "name": "Gaming Keyboard",
+    "description": "RGB backlit mechanical gaming keyboard with customizable keys.",
+    "full_description": "Enhance your gaming experience with this RGB backlit mechanical gaming keyboard. Featuring customizable keys, it allows you to tailor your setup for maximum efficiency and style during your gaming sessions. The keyboard offers a tactile and responsive feel, making it ideal for both gaming and typing. Its durable construction ensures lasting performance, even during intense gaming marathons.",
+    "price": 569.99,
+    "images": "https://i5.walmartimages.com/seo/SteelSeries-Apex-9-Mini-60-Wired-OptiPoint-Adjustable-Actuation-Switch-Gaming-Keyboard-with-RGB-Lighting-Black_ffc8afc1-75c2-4729-a6df-a85317c48086.6af3be98478f401d40cd0119c2de69b3.jpeg"
+  },
+  {
+    "id": 6,
+    "qtd": 0,
+    "name": "4K Ultra HD Monitor",
+    "description": "27-inch 4K Ultra HD monitor with stunning color accuracy and wide viewing angles.",
+    "full_description": "Enjoy stunning visuals with this 27-inch 4K Ultra HD monitor. With exceptional color accuracy and wide viewing angles, it’s ideal for both professional work and immersive gaming experiences. The monitor features a sleek design and adjustable stand, allowing you to find the perfect position for your viewing needs. Its high resolution and vibrant colors make it a great choice for video editing, graphic design, and watching movies.",
+    "price": 899.99,
+    "images": "https://i.dell.com/is/image/DellContent//content/dam/images/products/electronics-and-accessories/dell/monitors/dell-gaming/s3422dwg/s3422dwg-xfp-01-bk.psd?fmt=png-alpha&pscan=auto&scl=1&hei=476&wid=524&qlt=100,1&resMode=sharp2&size=524,476&chrss=full"
+  },
+  {
+    "id": 7,
+    "qtd": 0,
+    "name": "Ergonomic Office Chair",
+    "description": "Adjustable ergonomic office chair with lumbar support and breathable mesh.",
+    "full_description": "This adjustable ergonomic office chair provides exceptional comfort and support with its lumbar support and breathable mesh design. Perfect for long working hours or home office setups, the chair features multiple adjustments for seat height, backrest angle, and armrests. Its ergonomic design promotes healthy posture and reduces the risk of back pain, making it an essential addition to any workplace.",
+    "price": 749.99,
+    "images": "https://static.mundomax.com.br/produtos/79603/550/1.webp"
+  },
+  {
+    "id": 8,
+    "qtd": 0,
+    "name": "External Hard Drive",
+    "description": "1TB external hard drive with fast data transfer speeds.",
+    "full_description": "Store and transfer your data effortlessly with this 1TB external hard drive. It offers fast data transfer speeds, making it an excellent choice for backups and transporting large files. The hard drive is compact and durable, with a sleek design that fits easily into your bag or pocket. Whether you need extra storage space for your personal files, photos, or videos, this hard drive provides reliable performance and ample capacity.",
+    "price": 359.99,
+    "images": "https://images.kabum.com.br/produtos/fotos/129775/ssd-portatil-sandisk-extreme-1tb-usb-3-1-sdssde61-1t00-g25_1603113853_gg.jpg"
+  },
+  {
+    "id": 9,
+    "qtd": 0,
+    "name": "Digital Drawing Tablet",
+    "description": "Compact digital drawing tablet with pressure-sensitive stylus for artists.",
+    "full_description": "This compact digital drawing tablet is perfect for artists and designers. Featuring a pressure-sensitive stylus, it provides natural and responsive pen strokes for your creative projects. The tablet is lightweight and portable, making it easy to carry around and use wherever inspiration strikes. Its advanced features and compatibility with various design software make it an excellent tool for both beginners and professionals.",
+    "price": 979.99,
+    "images": "https://http2.mlstatic.com/D_NQ_NP_2X_739930-MLU72854733242_112023-F.webp"
+  },
+  {
+    "id": 10,
+    "qtd": 0,
+    "name": "Smart LED Light Bulbs",
+    "description": "Set of 4 smart LED light bulbs with customizable colors and brightness.",
+    "full_description": "Upgrade your lighting with this set of 4 smart LED light bulbs. With customizable colors and brightness, they allow you to create the perfect ambiance for any occasion. The bulbs are easy to control via your smartphone, with options for scheduling, dimming, and setting scenes. Whether you want to relax with a warm glow or energize your space with vibrant colors, these smart bulbs provide versatile lighting solutions.",
+    "price": 249.99,
+    "images": "https://www.fastshop.com.br//wcsstore/FastShopCAS/images/catalog/YTL530EBCO_PRD/YTL530EBCO_PRD_447_1.jpeg"
+  },
+  {
+    "id": 11,
+    "qtd": 0,
+    "name": "Wireless Earbuds",
+    "description": "True wireless earbuds with touch control and long battery life.",
+    "full_description": "These true wireless earbuds offer touch control and a long battery life, providing a seamless and convenient audio experience. Ideal for music, calls, and workouts, the earbuds deliver clear sound quality and a secure fit. The compact charging case ensures they are always ready to use, while the sweat-resistant design makes them perfect for active lifestyles.",
+    "price": 169.99,
+    "images": "https://www.fastshop.com.br//wcsstore/FastShopCAS/images/catalog/AEMY592BEAAZL_PRD/AEMY592BEAAZL_PRD_447_1.jpeg"
+  },
+  {
+    "id": 12,
+    "qtd": 0,
+    "name": "Smartwatch",
+    "description": "Stylish smartwatch with fitness tracking and customizable watch faces.",
+    "full_description": "This stylish smartwatch combines fitness tracking with customizable watch faces. It helps you stay connected and motivated with its advanced health and activity monitoring features. The watch tracks your steps, heart rate, and sleep patterns, providing valuable insights into your daily routines. With notifications, apps, and a sleek design, this smartwatch is both a fashion statement and a functional gadget.",
+    "price": 1029.99,
+    "images": "https://samsungbrshop.vtexassets.com/arquivos/ids/233535-600-auto?v=638550281352030000&width=600&height=auto&aspect=true"
+  },
+  {
+    "id": 13,
+    "qtd": 0,
+    "name": "VR Headset",
+    "description": "Immersive VR headset with stunning graphics and 360-degree viewing.",
+    "full_description": "Immerse yourself in virtual reality with this high-quality VR headset. Featuring stunning graphics and 360-degree viewing, it provides an incredible gaming and entertainment experience. The headset is comfortable to wear and easy to set up, with adjustable straps and lenses for a perfect fit. Whether you're exploring new worlds or watching VR videos, this headset delivers unparalleled immersion and excitement.",
+    "price": 999.99,
+    "images": "https://i5.walmartimages.com/seo/Oculus-Quest-2-VR-Headset-128-GB-Carrying-Case_7d05dd11-c826-4202-a650-9549a3a19257.6afc9a398807b84bb05174524b9bc34b.jpeg"
+  },
+  {
+    "id": 14,
+    "qtd": 0,
+    "name": "Portable Bluetooth Speaker",
+    "description": "Compact and waterproof portable Bluetooth speaker with powerful sound.",
+    "full_description": "Take your music anywhere with this compact and waterproof portable Bluetooth speaker. Despite its small size, it delivers powerful sound quality, making it perfect for outdoor adventures, parties, or casual listening. The speaker is designed to withstand water and dust, ensuring durability and reliability. With easy Bluetooth connectivity and long battery life, this speaker is a versatile and convenient audio companion.",
+    "price": 709.99,
+    "images": "https://redmondelectric.ie/cdn/shop/products/1100x9006_afb54aa1-27be-4347-932a-82c4ab94bd1e_1000x.png?v=1668591184"
+  },
+  {
+    "id": 15,
+    "qtd": 0,
+    "name": "Electric Kettle",
+    "description": "1.7-liter electric kettle with rapid boiling technology and auto shut-off.",
+    "full_description": "Boil water quickly and efficiently with this 1.7-liter electric kettle. Featuring rapid boiling technology and an auto shut-off function, it ensures safety and convenience. The kettle has a sleek design with a comfortable handle and easy-to-read water level indicator. Perfect for making tea, coffee, or instant meals, this electric kettle is a great addition to any kitchen.",
+    "price": 304.99,
+    "images": "https://www.smappliance.com/cdn/shop/products/10156876-KW-1362-1.7LE.KETTLE_1100x.png?v=1620836331"
+  }
+]
