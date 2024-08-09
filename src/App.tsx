@@ -6,6 +6,7 @@ import Payment from "./pages/payment/Payment";
 import ScrollToTop from "./components/keepPageAtThetop/keepPageAtTheTop";
 import SignInPage from "./pages/signIn/SignInPage";
 import SignUpPage from "./pages/signUp/SignUp";
+import PaginaFinal from "./pages/paginalFinal/PaginaFinal";
 
 const RouterApp = createBrowserRouter([
   {
@@ -59,6 +60,15 @@ const RouterApp = createBrowserRouter([
       <>
         <ScrollToTop />
         <SignInPage />
+      </>
+    ),
+  },
+  {
+    path: "/paginafinal",
+    element: (
+      <>
+        <ScrollToTop />
+        <PaginaFinal />
       </>
     ),
   },

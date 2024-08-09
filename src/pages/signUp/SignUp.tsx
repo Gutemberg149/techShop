@@ -38,10 +38,14 @@ function SignUpPage() {
 
       await localStorage.setItem("localStorageUserName", JSON.stringify(nome));
     } catch (error) {
-      console.error("Erro ao registrar usuário:", error.message);
-      console.error("Error code:", error.code);
+      if (error instanceof Error) {
+        console.error("Erro ao registrar usuário:", error.message);
+        console.error("Error code:", error.name);
 
-      alert("Ocorreu um erro ao registrar. Verifique seu email e senha.");
+        alert("Ocorreu um erro. Verifique seu email e senha.");
+      } else {
+        console.error("An unknown error occurred");
+      }
     }
   };
 

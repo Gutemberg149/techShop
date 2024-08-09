@@ -9,7 +9,7 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../../firebase/FirebaseAuth";
 
 function Nav() {
-  const [user, setUser] = useState("");
+  const [user, setUser] = useState<string>("");
   const [showSearch, setShowSearch] = useState(false);
   const [showSign, setShowSign] = useState(false);
 
@@ -36,7 +36,7 @@ function Nav() {
   //this code bellow is to check if the user is logged in or not.
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      return setUser(currentUser);
+      setUser(currentUser?.displayName || "");
     });
     return () => {
       unsubscribe();
@@ -70,9 +70,9 @@ function Nav() {
               <p>carrinho</p>
             </div>
           </Link>
-          {user != null ? (
+          {user ? (
             <p>
-              <span>Bem vindo</span> {user.displayName}
+              <span>Bem vindo</span> {user}
             </p>
           ) : null}
 

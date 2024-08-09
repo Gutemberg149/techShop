@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link, useLoaderData, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
 import { ProdContext } from "../../components/prodsContex/ProdsContext";
 import Footer from "../../components/footer/Footer";

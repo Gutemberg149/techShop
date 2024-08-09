@@ -8,9 +8,9 @@ import Nav from "../../components/nav/Nav";
 
 function Payment() {
   const [nome, setNome] = useState("");
-  const [celNumber, setCelNumber] = useState<number | null>(null);
-  const [cardNumber, setCardNumber] = useState<number | null>(null);
-  const [cardCode, setCardCode] = useState<number | null>(null);
+  const [celNumber, setCelNumber] = useState("");
+  const [cardNumber, setCardNumber] = useState("");
+  const [cardCode, setCardCode] = useState("");
   const [ableBtn, setAbleBtn] = useState(true);
 
   const context = useContext(ProdContext);
@@ -18,28 +18,28 @@ function Payment() {
     throw new Error("Forgot to pass provider");
   }
   const { prodInCart, setProdInCart, total } = context;
-  // setProdInCart([]);
-  // localStorage.setItem("cart", JSON.stringify(""));
+
   useEffect(() => {
-    if (
-      nome !== "" &&
-      nome !== null &&
-      celNumber !== null &&
-      celNumber !== 0 &&
-      cardNumber !== null &&
-      cardNumber !== 0 &&
-      cardCode !== null &&
-      cardCode !== 0
-    ) {
-      setAbleBtn(false);
-    } else {
-      setAbleBtn(true);
-    }
+    setAbleBtn(!(nome && celNumber && cardNumber && cardCode));
   }, [nome, celNumber, cardNumber, cardCode]);
 
   const location = useLocation();
   const pathName = location.pathname;
   localStorage.setItem("previuosLocation", JSON.stringify(pathName));
+
+  function cleanLocalStorage() {
+    localStorage.setItem("cart", JSON.stringify(" "));
+    setProdInCart([]);
+  }
+
+  function handleNumberInputChange(setter: React.Dispatch<React.SetStateAction<string>>) {
+    return (e: React.ChangeEvent<HTMLInputElement>) => {
+      const value = e.target.value;
+      if (value === "" || !isNaN(Number(value))) {
+        setter(value);
+      }
+    };
+  }
 
   return (
     <Wrapper>
@@ -62,20 +62,22 @@ function Payment() {
           </div>
           <div className="inputcontainer">
             <label htmlFor="phoneNumber">Celuar - Whatssap</label>
-            <input type="number" id="phoneNumber" value={celNumber !== null ? celNumber : ""} onChange={(e) => setCelNumber(Number(e.target.value))} />
+            <input type="text" id="phoneNumber" value={celNumber} onChange={handleNumberInputChange(setCelNumber)} />
           </div>
 
           <div className="inputcontainer">
             <label htmlFor="cardNumber">Numero do cartão</label>
-            <input type="number" id="cardNumber" value={cardNumber !== null ? cardNumber : ""} onChange={(e) => setCardNumber(Number(e.target.value))} />
+            <input type="text" id="cardNumber" value={cardNumber} onChange={handleNumberInputChange(setCardNumber)} />
           </div>
           <div className="inputcontainer">
             <label htmlFor="securityCode">Código de segurança</label>
-            <input type="number" id="securityCode" value={cardCode !== null ? cardCode : ""} onChange={(e) => setCardCode(Number(e.target.value))} />
+            <input type="text" id="securityCode" value={cardCode} onChange={handleNumberInputChange(setCardCode)} />
           </div>
 
           <div className="pay" style={{ display: ableBtn ? "none" : "block" }}>
-            <Link to="/">Pay</Link>
+            <Link to="/paginafinal">
+              <p onClick={() => cleanLocalStorage()}>Finalizar</p>
+            </Link>
           </div>
         </form>
 

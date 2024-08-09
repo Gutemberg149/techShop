@@ -3,23 +3,21 @@ import Footer from "../../components/footer/Footer";
 import { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase/FirebaseAuth";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Nav from "../../components/nav/Nav";
 
 function SignInPage() {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
 
-  const location = useLocation();
-  const pathName = location.pathname;
-  console.log(pathName);
-
   const navigate = useNavigate();
 
   const handleRegister = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    const previuosLocation = JSON.parse(localStorage.getItem("previuosLocation"));
+    const storedLocation = localStorage.getItem("previuosLocation");
+    const previuosLocation = storedLocation ? JSON.parse(storedLocation) : "/";
+
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, senha);
       const user = userCredential.user;
@@ -27,13 +25,18 @@ function SignInPage() {
       setEmail("");
       setSenha("");
       navigate(previuosLocation);
+
       const userInfoName = user.providerData[0].displayName;
       localStorage.setItem("localStorageUserName", JSON.stringify(userInfoName));
     } catch (error) {
-      console.error("Erro ao registrar usuário:", error.message);
-      console.error("Error code:", error.code);
+      if (error instanceof Error) {
+        console.error("Erro ao registrar usuário:", error.message);
+        console.error("Error code:", error.name);
 
-      alert("Ocorreu um erro ao registrar. Verifique seu email e senha.");
+        alert("Ocorreu um erro ao registrar. Verifique seu email e senha.");
+      } else {
+        console.error("An unknown error occurred");
+      }
     }
   };
 
