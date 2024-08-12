@@ -270,11 +270,6 @@ const Wrapper = styled.div`
     }
   }
   @media only screen and (min-device-width: 200px) and (max-device-width: 374px) and (-webkit-min-device-pixel-ratio: 2) {
-    /* width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
     header {
       width: 100%;
     }
@@ -283,25 +278,347 @@ const Wrapper = styled.div`
       font-size: 1.5rem;
     }
     main {
-      width: 100vw;
-      min-height: 75vh;
+      width: 100%;
+      min-height: 100vh;
       display: flex;
-      align-items: start;
-      justify-content: space-around;
-      padding: 0 5rem;
-      margin-top: 3rem;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0 0.5rem;
+      margin-top: 1rem;
 
       form {
-        width: 35%;
+        width: 100%;
+        height: 30rem;
+        margin-bottom: 1.5rem;
+        padding: 1rem 0.6rem 2rem 0.6rem;
+
+        .topText {
+          h5 {
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .textIdentificacao {
+            font-size: 0.7rem;
+            text-align: center;
+          }
+        }
+        .inputcontainer {
+          input {
+          }
+
+          &:focus {
+          }
+        }
+        label {
+        }
+      }
+
+      .pay {
+        a {
+        }
+
+        &:hover {
+        }
+      }
+
+      .resumo {
+        width: 100%;
+        min-height: 18rem;
+
+        padding: 0.5rem;
+        margin-bottom: 2rem;
+        h3 {
+          margin: 0.5rem 0 1rem 0;
+          font-size: 1.1rem;
+        }
+        .innerResumo {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          width: 99%;
+
+          margin-bottom: 1rem;
+
+          img {
+          }
+          .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .name {
+              font-size: 0.8rem;
+              height: 2rem;
+            }
+            .qtd {
+              font-size: 0.7rem;
+              height: 2rem;
+            }
+            .price {
+              font-size: 0.8rem;
+              height: 2rem;
+            }
+          }
+          .total {
+            display: flex;
+            align-items: center;
+            .totalText {
+              margin-right: 0.5rem;
+              font-weight: 500;
+            }
+            .totalValue {
+              display: flex;
+              font-size: 0.8rem;
+            }
+          }
+        }
+        .innerResumo:not(:last-child) {
+          border-bottom: 1px solid gray;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-device-width: 375px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+    header {
+      width: 100%;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    main {
+      width: 90%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0 0.5rem;
+      margin-top: 1rem;
+
+      form {
+        width: 100%;
+        height: 30rem;
+        margin-bottom: 1.5rem;
+        padding: 1rem 0.6rem 2rem 0.6rem;
+
+        .topText {
+          h5 {
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .textIdentificacao {
+            font-size: 0.7rem;
+            text-align: center;
+          }
+        }
+        .inputcontainer {
+          input {
+          }
+
+          &:focus {
+          }
+        }
+        label {
+        }
+      }
+
+      .pay {
+        a {
+        }
+
+        &:hover {
+        }
+      }
+
+      .resumo {
+        width: 100%;
+        min-height: 18rem;
+
+        padding: 0.5rem;
+        margin-bottom: 2rem;
+        h3 {
+          margin: 0.5rem 0 1rem 0;
+          font-size: 1.1rem;
+        }
+        .innerResumo {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          width: 99%;
+
+          margin-bottom: 1rem;
+
+          img {
+          }
+          .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .name {
+              font-size: 0.8rem;
+              height: 2rem;
+            }
+            .qtd {
+              font-size: 0.7rem;
+              height: 2rem;
+            }
+            .price {
+              font-size: 0.8rem;
+              height: 2rem;
+            }
+          }
+          .total {
+            display: flex;
+            align-items: center;
+            .totalText {
+              margin-right: 0.5rem;
+              font-weight: 500;
+            }
+            .totalValue {
+              display: flex;
+              font-size: 0.8rem;
+            }
+          }
+        }
+        .innerResumo:not(:last-child) {
+          border-bottom: 1px solid gray;
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 601px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+    header {
+      width: 100%;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    main {
+      width: 30rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0 0.5rem;
+      margin-top: 1rem;
+
+      form {
+        width: 100%;
         height: 35rem;
-        border: 2px solid #717070;
-        display: flex;
-        background-color: white;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1rem;
-        border-radius: 1rem;
+        margin-bottom: 1.5rem;
+        padding: 1rem 0.6rem 2rem 0.6rem;
+
+        .topText {
+          margin-bottom: 1rem;
+          h5 {
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .textIdentificacao {
+            font-size: 0.8rem;
+            text-align: center;
+          }
+        }
+        .inputcontainer {
+          input {
+          }
+
+          &:focus {
+          }
+        }
+        label {
+        }
+      }
+
+      .pay {
+        a {
+        }
+
+        &:hover {
+        }
+      }
+
+      .resumo {
+        width: 100%;
+        min-height: 18rem;
+
+        padding: 0.5rem;
+        margin-bottom: 2rem;
+        h3 {
+          margin: 0.5rem 0 1rem 0;
+          font-size: 1.2rem;
+        }
+        .innerResumo {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          width: 99%;
+
+          margin-bottom: 1rem;
+
+          img {
+            width: 90px;
+            margin-bottom: 1rem;
+          }
+          .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .name {
+              font-size: 0.95rem;
+              height: 2rem;
+            }
+            .qtd {
+              font-size: 0.85rem;
+              height: 2rem;
+            }
+            .price {
+              font-size: 0.85rem;
+              height: 2rem;
+            }
+          }
+          .total {
+            display: flex;
+            align-items: center;
+            .totalText {
+              margin-right: 0.5rem;
+              font-weight: 500;
+            }
+            .totalValue {
+              display: flex;
+              font-size: 0.9rem;
+            }
+          }
+        }
+        .innerResumo:not(:last-child) {
+          border-bottom: 1px solid gray;
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 901px) and (max-device-width: 1400px) and (-webkit-min-device-pixel-ratio: 2) {
+    h1 {
+    }
+    main {
+      justify-content: center;
+      padding: 0 2rem;
+      margin-bottom: 2rem;
+      gap: 1.5rem;
+
+      form {
+        width: 28rem;
+
         .topText {
           h5 {
             font-size: 1.5rem;
@@ -370,73 +687,32 @@ const Wrapper = styled.div`
         }
       }
       .resumo {
-        display: flex;
-        flex-direction: column;
-        border: 2px solid gray;
-        width: 30%;
-        min-height: 25rem;
-        display: flex;
-        align-items: center;
-        border-radius: 1rem;
-        background: white;
-        padding: 0.5rem;
-        margin-bottom: 2rem;
+        width: 23rem;
+        min-height: 15rem;
         h3 {
           margin: 1rem 0 3rem 0;
         }
         .innerResumo {
-          display: flex;
-          align-items: start;
-          justify-content: space-around;
-          width: 99%;
-          height: fit-content;
-          margin-bottom: 2rem;
-
           img {
             width: 80px;
           }
           .info {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            margin-right: 0.5rem;
             .name {
-              font-size: 0.8rem;
-              height: 2rem;
             }
             .qtd {
-              font-size: 0.7rem;
-              height: 2rem;
             }
             .price {
-              font-size: 0.8rem;
-              height: 2rem;
             }
           }
           .total {
-            display: flex;
-            align-items: center;
             .totalText {
-              margin-right: 0.5rem;
-              font-weight: 500;
-            }
-            .totalValue {
-              display: flex;
-              font-size: 0.8rem;
             }
           }
         }
-        .innerResumo:not(:last-child) {
-          border-bottom: 1px solid gray;
-        }
+      }
+      .innerResumo:not(:last-child) {
       }
     }
-  }
-  @media only screen and (min-device-width: 375px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
-  }
-  @media only screen and (min-device-width: 601px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
-  }
-  @media only screen and (min-device-width: 901px) and (max-device-width: 1390px) and (-webkit-min-device-pixel-ratio: 2) {
   }
 `;
 export default Payment;
