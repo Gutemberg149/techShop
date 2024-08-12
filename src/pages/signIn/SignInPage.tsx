@@ -42,7 +42,9 @@ function SignInPage() {
 
   return (
     <Wrapper>
-      <Nav />
+      <header>
+        <Nav />
+      </header>
       <form onSubmit={handleRegister}>
         <div className="topText">
           <h5>Entre na sua conta aqui.</h5>
@@ -77,12 +79,12 @@ function SignInPage() {
 }
 
 const Wrapper = styled.div`
+  min-height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  width: 100vw;
   background-color: #f3f3f3;
   form {
     width: 30%;
@@ -163,6 +165,219 @@ const Wrapper = styled.div`
         &:hover {
           color: red;
           font-weight: 700;
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 250px) and (max-device-width: 374px) and (-webkit-min-device-pixel-ratio: 2) {
+    min-height: 100vh;
+    width: 100vw;
+    header {
+      width: 100%;
+      border-bottom-left-radius: 1.5rem;
+      border-bottom-right-radius: 1.5rem;
+      overflow: hidden;
+    }
+    form {
+      width: 100%;
+      height: 34rem;
+      padding: 1rem;
+      margin: 0.3rem 0 2rem 0;
+      .topText {
+        margin-bottom: 0rem;
+        h5 {
+          font-size: 1rem;
+          margin-bottom: 0.5rem;
+        }
+        .textIdentificacao {
+          font-size: 0.75rem;
+        }
+      }
+      .inputcontainer {
+        margin-bottom: 0rem;
+        input {
+          &:focus {
+          }
+        }
+        label {
+        }
+      }
+      .btnRegistrar {
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+        &:hover {
+        }
+      }
+      .linkSing {
+        font-size: 0.6rem;
+        font-weight: 300;
+        color: #5d5d5d;
+        a {
+          font-size: 0.8rem;
+          font-weight: 600;
+          margin-left: 0.2rem;
+          &:hover {
+            color: red;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+    header {
+      width: 100%;
+    }
+    form {
+      width: 20rem;
+      height: 34rem;
+      padding: 1rem;
+      margin: 1rem 0 2rem 0;
+      .topText {
+        margin-bottom: 0rem;
+        h5 {
+          font-size: 1rem;
+          margin-bottom: 0.5rem;
+        }
+        .textIdentificacao {
+          font-size: 0.75rem;
+        }
+      }
+      .inputcontainer {
+        margin-bottom: 0rem;
+        input {
+          &:focus {
+          }
+        }
+        label {
+        }
+      }
+      .btnRegistrar {
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+        &:hover {
+        }
+      }
+      .linkSing {
+        font-size: 0.6rem;
+        font-weight: 300;
+        color: #5d5d5d;
+        a {
+          font-size: 0.8rem;
+          font-weight: 600;
+          margin-left: 0.2rem;
+          &:hover {
+            color: red;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 601px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+    header {
+      width: 100%;
+    }
+    form {
+      width: 25rem;
+      height: 34rem;
+      padding: 1rem;
+      margin: 2rem 0 2rem 0;
+      .topText {
+        margin-bottom: 0rem;
+        h5 {
+          font-size: 1rem;
+          margin-bottom: 0.5rem;
+        }
+        .textIdentificacao {
+          font-size: 0.75rem;
+        }
+      }
+      .inputcontainer {
+        margin-bottom: 0rem;
+        input {
+          &:focus {
+          }
+        }
+        label {
+        }
+      }
+      .btnRegistrar {
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+        &:hover {
+        }
+      }
+      .linkSing {
+        font-size: 0.6rem;
+        font-weight: 300;
+        color: #5d5d5d;
+        a {
+          font-size: 0.8rem;
+          font-weight: 600;
+          margin-left: 0.2rem;
+          &:hover {
+            color: red;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 901px) and (max-device-width: 1390px) and (-webkit-min-device-pixel-ratio: 2) {
+    header {
+      width: 100%;
+    }
+    form {
+      width: 25rem;
+      height: 34rem;
+      padding: 1rem;
+      margin: 2rem 0 2rem 0;
+      .topText {
+        margin-bottom: 0rem;
+        h5 {
+          font-size: 1rem;
+          margin-bottom: 0.5rem;
+        }
+        .textIdentificacao {
+          font-size: 0.75rem;
+        }
+      }
+      .inputcontainer {
+        margin-bottom: 0rem;
+        input {
+          &:focus {
+          }
+        }
+        label {
+        }
+      }
+      .btnRegistrar {
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+        &:hover {
+        }
+      }
+      .linkSing {
+        font-size: 0.6rem;
+        font-weight: 300;
+        color: #5d5d5d;
+        a {
+          font-size: 0.8rem;
+          font-weight: 600;
+          margin-left: 0.2rem;
+          &:hover {
+            color: red;
+            font-weight: 700;
+          }
         }
       }
     }

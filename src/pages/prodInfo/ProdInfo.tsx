@@ -86,7 +86,9 @@ function ProdInfo() {
                   <span className="parcelas">{Math.floor(prods[prodId - 1].price / 12).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</span>
                 </p>
               </div>
-              <button onClick={addProdToCart}>Adicionar</button>
+              <div className="btnContainer">
+                <button onClick={addProdToCart}>Adicionar</button>
+              </div>
             </div>
           </main>
           <footer>
@@ -161,6 +163,201 @@ const Wrapper = styled.div`
         }
       }
     }
+  }
+  @media only screen and (min-device-width: 200px) and (max-device-width: 374px) and (-webkit-min-device-pixel-ratio: 2) {
+    main {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .popUp {
+        position: absolute;
+        width: 95vw;
+        height: 3rem;
+        font-size: 0.65rem;
+        font-weight: 600;
+
+        top: 30rem;
+        letter-spacing: 0.08rem;
+        font-weight: 600;
+      }
+      .left {
+        width: 100%;
+        display: grid;
+        place-items: center;
+        margin-top: 1rem;
+        img {
+          width: 50%;
+        }
+      }
+      .right {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1rem;
+        .name {
+          margin-bottom: 0.5rem;
+          font-size: 1.1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .fulldesc {
+          font-size: 0.9rem;
+          margin-bottom: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: justify;
+        }
+
+        .priceContainer {
+          margin-bottom: 2rem;
+          .price {
+            margin-bottom: 1rem;
+          }
+        }
+        .btnContainer {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          button {
+            width: 10rem;
+            height: 2.5rem;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+    main {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .popUp {
+        position: absolute;
+        width: 65vw;
+        height: 3rem;
+        font-size: 0.65rem;
+        font-weight: 600;
+        top: 31rem;
+        letter-spacing: 0.08rem;
+        font-weight: 600;
+      }
+      .left {
+        width: 100%;
+        display: grid;
+        place-items: center;
+        margin-top: 1rem;
+        img {
+          width: 50%;
+        }
+      }
+      .right {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1rem;
+        .name {
+          margin-bottom: 0.5rem;
+          font-size: 1.1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .fulldesc {
+          font-size: 0.9rem;
+          margin-bottom: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: justify;
+        }
+
+        .priceContainer {
+          margin-bottom: 2rem;
+          .price {
+            margin-bottom: 1rem;
+          }
+        }
+        .btnContainer {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          button {
+            width: 10rem;
+            height: 2.5rem;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 601px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+    main {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .popUp {
+        position: absolute;
+        width: 16rem;
+        height: 3rem;
+        font-size: 0.65rem;
+        font-weight: 600;
+        top: 34rem;
+        letter-spacing: 0.08rem;
+        font-weight: 600;
+      }
+      .left {
+        width: 100%;
+        display: grid;
+        place-items: center;
+        margin-top: 1rem;
+        img {
+          width: 50%;
+        }
+      }
+      .right {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1rem;
+        .name {
+          margin-bottom: 0.5rem;
+          font-size: 1.1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .fulldesc {
+          font-size: 0.9rem;
+          margin-bottom: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: justify;
+        }
+
+        .priceContainer {
+          margin-bottom: 2rem;
+          .price {
+            margin-bottom: 1rem;
+          }
+        }
+        .btnContainer {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          button {
+            width: 10rem;
+            height: 2.5rem;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 901px) and (max-device-width: 1390px) and (-webkit-min-device-pixel-ratio: 2) {
   }
 `;
 export default ProdInfo;

@@ -185,6 +185,191 @@ const Wrapper = styled.div`
       }
     }
   }
+  @media only screen and (min-device-width: 200px) and (max-device-width: 374px) and (-webkit-min-device-pixel-ratio: 2) {
+    min-height: 80vh;
+    header {
+      width: 100%;
+      border-bottom-left-radius: 1.5rem;
+      border-bottom-right-radius: 1.5rem;
+      overflow: hidden;
+    }
+    form {
+      width: 100%;
+      height: 34rem;
+      padding: 0.5rem;
+      margin: 1rem 0 2rem 0;
+      .topText {
+        margin-bottom: 1rem;
+        h5 {
+          font-size: 0.85rem;
+          margin-bottom: 0.5rem;
+        }
+        .textIdentificacao {
+          font-size: 0.7rem;
+        }
+      }
+      .inputcontainer {
+        input {
+          &:focus {
+          }
+        }
+        label {
+        }
+      }
+      .btnRegistrar {
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+        &:hover {
+        }
+      }
+      .linkSing {
+        font-size: 0.7rem;
+        a {
+          font-size: 0.8rem;
+          &:hover {
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+    min-height: 80vh;
+    header {
+      width: 100%;
+    }
+    form {
+      width: 22rem;
+      height: 36rem;
+      padding: 1rem;
+      margin: 1rem 0 2rem 0;
+      .topText {
+        margin-bottom: 2rem;
+        h5 {
+          font-size: 1rem;
+          margin-bottom: 0.5rem;
+        }
+        .textIdentificacao {
+          font-size: 0.8rem;
+        }
+      }
+      .inputcontainer {
+        input {
+          &:focus {
+          }
+        }
+        label {
+        }
+      }
+      .btnRegistrar {
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+        &:hover {
+        }
+      }
+      .linkSing {
+        font-size: 0.8rem;
+        a {
+          font-size: 0.9rem;
+          &:hover {
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 601px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+    header {
+      width: 100%;
+    }
+    form {
+      width: 25rem;
+      height: 37rem;
+      padding: 1rem;
+      margin: 1rem 0 2rem 0;
+      .topText {
+        margin-bottom: 3rem;
+        h5 {
+          font-size: 1.15rem;
+          margin-bottom: 0.5rem;
+        }
+        .textIdentificacao {
+          font-size: 0.85rem;
+        }
+      }
+      .inputcontainer {
+        input {
+          &:focus {
+          }
+        }
+        label {
+        }
+      }
+      .btnRegistrar {
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+        &:hover {
+        }
+      }
+      .linkSing {
+        font-size: 0.85rem;
+        a {
+          font-size: 0.9rem;
+          &:hover {
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 901px) and (max-device-width: 1390px) and (-webkit-min-device-pixel-ratio: 2) {
+    header {
+      width: 100%;
+    }
+    form {
+      width: 28rem;
+      height: 37rem;
+      padding: 1rem;
+      margin: 1rem 0 2rem 0;
+      .topText {
+        margin-bottom: 3rem;
+        h5 {
+          font-size: 1.15rem;
+          margin-bottom: 0.5rem;
+        }
+        .textIdentificacao {
+          font-size: 0.85rem;
+        }
+      }
+      .inputcontainer {
+        input {
+          &:focus {
+          }
+        }
+        label {
+        }
+      }
+      .btnRegistrar {
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+        &:hover {
+        }
+      }
+      .linkSing {
+        font-size: 0.85rem;
+        a {
+          font-size: 0.9rem;
+          &:hover {
+          }
+        }
+      }
+    }
+  }
 `;
 
 export default SignUpPage;

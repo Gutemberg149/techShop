@@ -81,5 +81,66 @@ const Wrapper = styled.div`
   .prodbox:hover > img {
     transform: scale(0.95);
   }
+  @media only screen and (min-device-width: 200px) and (max-device-width: 374px) and (-webkit-min-device-pixel-ratio: 2) {
+    .prodbox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: fit-content;
+      width: 100vw;
+      padding: 1rem;
+      margin: 1rem 0;
+
+      img {
+        width: 60%;
+      }
+      .name {
+        margin: 0.2rem 0;
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+      .description {
+        font-size: 0.7rem;
+        text-align: justify;
+      }
+      .price {
+        color: black;
+        font-weight: 700;
+        margin-top: 0.5rem;
+      }
+      .stallment {
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+        b {
+          margin-left: 0.3rem;
+        }
+        span {
+          margin-left: 0.3rem;
+        }
+      }
+      .frete {
+        position: relative;
+        bottom: 1rem;
+        left: 0rem;
+        margin-top: 1rem;
+        /* background-color: #4194e2; */
+        /* color: white; */
+        /* width: fit-content; */
+        padding: 0.2rem 0.8rem;
+        /* border-radius: 1rem; */
+        font-size: 0.7rem;
+        /* font-weight: 500; */
+      }
+    }
+    .prodbox:hover > img {
+      transform: scale(0.95);
+    }
+  }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+  }
+  @media only screen and (min-device-width: 601px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+  }
+  @media only screen and (min-device-width: 901px) and (max-device-width: 1390px) and (-webkit-min-device-pixel-ratio: 2) {
+  }
 `;
 export default ProdBox;

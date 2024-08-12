@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -42,12 +41,83 @@ const Wrapper = styled.div`
       font-size: 2rem;
       color: #525151;
       transition: 0.4s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       cursor: pointer;
       &:hover {
         transform: scale(1.4);
         color: black;
       }
     }
+  }
+  @media only screen and (min-device-width: 200px) and (max-device-width: 374px) and (-webkit-min-device-pixel-ratio: 2) {
+    width: 100vw;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    p {
+      font-size: 0.5rem;
+      width: 8rem;
+    }
+    .socialContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 5rem;
+      .icon {
+        margin: 0rem;
+        font-size: 1.3rem;
+        padding: 0;
+      }
+    }
+  }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+    width: 100vw;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    p {
+      font-size: 0.55rem;
+      width: 9rem;
+    }
+    .socialContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 6rem;
+      .icon {
+        margin: 0rem;
+        font-size: 1.5rem;
+        padding: 0;
+      }
+    }
+  }
+  @media only screen and (min-device-width: 601px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    p {
+      font-size: 0.55rem;
+      width: 18rem;
+    }
+    .socialContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 8rem;
+      .icon {
+        margin: 0rem;
+        font-size: 1.7rem;
+        padding: 0;
+      }
+    }
+  }
+  @media only screen and (min-device-width: 901px) and (max-device-width: 1390px) and (-webkit-min-device-pixel-ratio: 2) {
   }
 `;
 export default Footer;

@@ -68,5 +68,170 @@ const Wrapper = styled.div`
       }
     }
   }
+  @media only screen and (min-device-width: 200px) and (max-device-width: 374px) and (-webkit-min-device-pixel-ratio: 2) {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .searchcontainer {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        input {
+          margin-left: 0rem;
+          border: none;
+          height: 3rem;
+          padding-left: 1rem;
+          width: 90%;
+          font-size: 0.8rem;
+          border-radius: 1rem;
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .searchIcon {
+          width: 15%;
+          height: 3rem;
+          margin-right: 0rem;
+          border-radius: 0rem;
+          font-size: 0.7rem;
+          border-top-right-radius: 1rem;
+          border-bottom-right-radius: 1rem;
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .searchcontainer {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        input {
+          margin-left: 0rem;
+          border: none;
+          height: 3rem;
+          padding-left: 1rem;
+          width: 90%;
+          font-size: 0.9rem;
+          border-radius: 1rem;
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .searchIcon {
+          width: 10%;
+          height: 3rem;
+          margin-right: 0rem;
+          border-radius: 0rem;
+          font-size: 1rem;
+          border-top-right-radius: 1rem;
+          border-bottom-right-radius: 1rem;
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 601px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .searchcontainer {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 2.5rem;
+      form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 2.5rem;
+        input {
+          margin-left: 0rem;
+          border: none;
+          border-radius: 0.5rem;
+          height: 2.5rem;
+          padding-left: 1rem;
+          width: 90%;
+          font-size: 0.9rem;
+          overflow: hidden;
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .searchIcon {
+          width: 10%;
+          height: 2.5rem;
+          margin-right: 0rem;
+          border-radius: 0rem;
+          font-size: 0.9rem;
+          border-top-right-radius: 0.5rem;
+          border-bottom-right-radius: 0.5rem;
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 901px) and (max-device-width: 1390px) and (-webkit-min-device-pixel-ratio: 2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .searchcontainer {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 2.5rem;
+      form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 2.5rem;
+        input {
+          margin-left: 0rem;
+          border: none;
+          border-radius: 1rem;
+          height: 2.5rem;
+          padding-left: 1rem;
+          width: 90%;
+          font-size: 0.9rem;
+          overflow: hidden;
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .searchIcon {
+          width: 10%;
+          height: 2.5rem;
+          margin-right: 0rem;
+          border-radius: 0rem;
+          font-size: 1.1rem;
+          border-top-right-radius: 1rem;
+          border-bottom-right-radius: 1rem;
+        }
+      }
+    }
+  }
 `;
 export default SearchFormHeader;

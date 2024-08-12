@@ -111,34 +111,6 @@ function Cart() {
   );
 }
 const Wrapper = styled.div`
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100vw;
-    padding: 1rem 2rem;
-    background-color: black;
-
-    .logo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      img {
-        width: 50px;
-        margin-right: 0.5rem;
-      }
-      p {
-        font-size: 1.6rem;
-        font-weight: 700;
-        color: white;
-        span {
-          color: #04aed0;
-          font-size: 2.2rem;
-        }
-      }
-    }
-  }
   main {
     width: 100vw;
     min-height: 100vh;
@@ -277,6 +249,403 @@ const Wrapper = styled.div`
           &:hover {
             opacity: 0.8;
             color: #1f1f1f;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 200px) and (max-device-width: 374px) and (-webkit-min-device-pixel-ratio: 2) {
+    main {
+      width: 100vw;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .resumo {
+        margin: 1rem 0;
+        width: 100vw;
+
+        padding: 1rem 0.5rem;
+
+        h3 {
+          font-size: 1.1rem;
+          margin-bottom: 1rem;
+          padding-bottom: 0.5rem;
+        }
+        .messageNoproducts {
+          h4 {
+            font-size: 0.8rem;
+          }
+          .CompreAqui {
+            width: 7rem;
+
+            font-size: 0.8rem;
+
+            cursor: pointer;
+            &:hover {
+            }
+          }
+        }
+        .innerResumo {
+          margin-bottom: 1rem;
+
+          .prodFinalInfo {
+            img {
+            }
+            .info {
+              display: flex;
+              flex-direction: column;
+              margin-left: 0.8rem;
+              .name {
+                font-size: 0.7rem;
+              }
+              .qtd {
+                font-size: 0.7rem;
+                margin-top: 0.3rem;
+              }
+              .price {
+                font-size: 0.8rem;
+                margin-top: 0.3rem;
+                span {
+                  font-weight: 600;
+                }
+              }
+            }
+            .btnDelete {
+              width: 3rem;
+
+              cursor: pointer;
+              &:hover {
+              }
+            }
+          }
+        }
+        .bottomInfo {
+        }
+        .total {
+          margin-bottom: 1rem;
+
+          .totalText {
+            font-size: 0.9rem;
+            font-weight: 600;
+          }
+          .totalValue {
+            font-size: 0.9rem;
+            font-weight: 600;
+          }
+        }
+        a {
+          .btnPay {
+            width: 100%;
+            height: 2.5rem;
+            border: none;
+            background-color: #7a7979;
+            border-radius: 0.2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: white;
+            cursor: pointer;
+            &:hover {
+              opacity: 0.8;
+              color: #1f1f1f;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+    main {
+      width: 100vw;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .resumo {
+        margin: 1rem 0;
+        width: 90vw;
+        padding: 1rem 0rem;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+          font-size: 1.3rem;
+          margin-bottom: 1rem;
+          padding-bottom: 0.5rem;
+        }
+        .messageNoproducts {
+          min-height: 15rem;
+          h4 {
+            font-size: 1rem;
+          }
+          .CompreAqui {
+            width: 8rem;
+            font-size: 0.9rem;
+            cursor: pointer;
+            &:hover {
+            }
+          }
+        }
+        .innerResumo {
+          margin-bottom: 1rem;
+          width: 20rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .prodFinalInfo {
+            height: 8rem;
+            width: 90%;
+            img {
+            }
+            .info {
+              margin-left: 0.8rem;
+              .name {
+                font-size: 0.8rem;
+              }
+              .qtd {
+                font-size: 0.8rem;
+                margin-top: 0.3rem;
+              }
+              .price {
+                font-size: 0.9rem;
+                margin-top: 0.4rem;
+                span {
+                  font-weight: 600;
+                }
+              }
+            }
+            .btnDelete {
+              width: 3rem;
+
+              cursor: pointer;
+              &:hover {
+              }
+            }
+          }
+        }
+        .bottomInfo {
+        }
+        .total {
+          margin-bottom: 1rem;
+
+          .totalText {
+            font-size: 0.9rem;
+            font-weight: 600;
+          }
+          .totalValue {
+            font-size: 0.9rem;
+            font-weight: 600;
+          }
+        }
+        a {
+          .btnPay {
+            width: 100%;
+            height: 2.5rem;
+            border: none;
+            background-color: #7a7979;
+            border-radius: 0.2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: white;
+            cursor: pointer;
+            &:hover {
+              opacity: 0.8;
+              color: #1f1f1f;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 601px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+    main {
+      width: 100vw;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .resumo {
+        margin: 1rem 0;
+        width: 90vw;
+        padding: 1rem 0rem;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+          font-size: 1.3rem;
+          margin-bottom: 1rem;
+          padding-bottom: 0.5rem;
+        }
+        .messageNoproducts {
+          min-height: 15rem;
+          h4 {
+            font-size: 1.1rem;
+          }
+          .CompreAqui {
+            width: 8rem;
+            font-size: 0.9rem;
+            cursor: pointer;
+            &:hover {
+            }
+          }
+        }
+        .innerResumo {
+          margin-bottom: 1rem;
+          width: 23rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .prodFinalInfo {
+            height: 10rem;
+            width: 90%;
+            img {
+              width: 80px;
+            }
+            .info {
+              margin-left: 0.9rem;
+              .name {
+                font-size: 0.9rem;
+              }
+              .qtd {
+                font-size: 0.9rem;
+                margin-top: 0.3rem;
+              }
+              .price {
+                font-size: 0.9rem;
+                margin-top: 0.4rem;
+                span {
+                  font-weight: 600;
+                }
+              }
+            }
+            .btnDelete {
+              width: 3.5rem;
+              height: 2rem;
+
+              cursor: pointer;
+              &:hover {
+              }
+            }
+          }
+        }
+        .bottomInfo {
+        }
+        .total {
+          margin-bottom: 1rem;
+          padding: 1rem 2rem 0 2rem;
+          .totalText {
+            font-size: 1.1rem;
+            font-weight: 600;
+          }
+          .totalValue {
+            font-size: 1rem;
+            font-weight: 600;
+          }
+        }
+        a {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .btnPay {
+            width: 12rem;
+            height: 2.5rem;
+            border: none;
+            background-color: #7a7979;
+            border-radius: 0.2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: white;
+            cursor: pointer;
+            &:hover {
+              opacity: 0.8;
+              color: #1f1f1f;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 901px) and (max-device-width: 1390px) and (-webkit-min-device-pixel-ratio: 2) {
+    main {
+      .resumo {
+        h3 {
+        }
+        .messageNoproducts {
+          min-height: 15rem;
+          h4 {
+            font-size: 1.1rem;
+          }
+          .CompreAqui {
+            width: 8rem;
+            font-size: 0.9rem;
+            cursor: pointer;
+            &:hover {
+            }
+          }
+        }
+        .innerResumo {
+          .prodFinalInfo {
+            img {
+            }
+            .info {
+              .name {
+              }
+              .qtd {
+              }
+              .price {
+                span {
+                }
+              }
+            }
+            .btnDelete {
+              cursor: pointer;
+              &:hover {
+              }
+            }
+          }
+        }
+        .bottomInfo {
+        }
+        .total {
+          margin-bottom: 1rem;
+          padding: 1rem 2rem 0 2rem;
+          .totalText {
+            font-size: 1.1rem;
+            font-weight: 600;
+          }
+          .totalValue {
+            font-size: 1rem;
+            font-weight: 600;
+          }
+        }
+        a {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .btnPay {
+            width: 12rem;
+            height: 2.5rem;
+            border: none;
+            background-color: #7a7979;
+            border-radius: 0.2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: white;
+            cursor: pointer;
+            &:hover {
+              opacity: 0.8;
+              color: #1f1f1f;
+            }
           }
         }
       }
